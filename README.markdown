@@ -100,12 +100,15 @@ work.**
 
 Fix:
 
-- install required redistributables (below are links to official Microsoft downloads):
+- Install required redistributables (below are links to official Microsoft downloads):
 
   * [DirectX End-User Runtime][directx-redist]
   * [Visual C++ 2010 Redistributable Package (x86)][visual-redist] (make sure not to mistake this
     for the x64 redistributable as Victoria II is not a 64-bit game–the link points to the
     appropriate version)
+
+  If one of the installers reports an error during the installation process, this can be a sign of
+  conflict or corruption. How to repair your system in such case is outside the scope of this guide.
 
 [directx-redist]: https://www.microsoft.com/en-US/download/details.aspx?id=35
 [visual-redist]:  https://www.microsoft.com/en-US/download/details.aspx?id=5555
