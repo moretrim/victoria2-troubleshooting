@@ -77,17 +77,26 @@ The game won’t start
 
 <sup>[Back to the table of contents](#toc)</sup>
 
+**Steam users, pay close attention to this section!** Important information has been
+**highlighted**.
+
 Symptoms:
 
-- this is a new install on a fresh system
+- **this is a new install on a fresh system**
+- **the unmodded game works fine, but the launcher can’t find mods or mods don’t work**
+- **there is some error being displayed, such as a runtime error for C++** <!-- stay compact -->  
+  ![MSVCP100.dll is missing](./msvcp100.png)
+- **an error appears, but only when starting the `victoria2.exe` or `v2game.exe` executable directly
+  in the game files and not through Steam**
+- there is no error being displayed
 - the game or launcher doesn’t even appear
 - the game process barely lasts if at all, there’s just no game
-- there is no error being displayed
-- there is some error being displayed, such as a runtime error for C++
 - the user files are missing, and the file structure is not being created by the game
 
 This is typical of the Steam version, as it appears the installation process seems to (sometimes?)
-neglect installation of required redistributables.
+neglect installation of required redistributables. **Steam users are highly encouraged to try the
+following fix when encountering a problem, even when some or all of the rest of the game appears to
+work.**
 
 Fix:
 
@@ -95,7 +104,8 @@ Fix:
 
   * [DirectX End-User Runtime][directx-redist]
   * [Visual C++ 2010 Redistributable Package (x86)][visual-redist] (make sure not to mistake this
-    for the x64 redistributable as Victoria II is not a 64-bit game)
+    for the x64 redistributable as Victoria II is not a 64-bit game–the link points to the
+    appropriate version)
 
 [directx-redist]: https://www.microsoft.com/en-US/download/details.aspx?id=35
 [visual-redist]:  https://www.microsoft.com/en-US/download/details.aspx?id=5555
