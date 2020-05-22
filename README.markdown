@@ -21,6 +21,8 @@ the default [since 2016][3.04]. Steam users can safely opt out of all beta progr
 
 Understanding your Victoria II install
 --------------------------------------
+[user files]:          #understanding-your-victoria-ii-install
+[user file structure]: #understanding-your-victoria-ii-install
 
 A typical installation leads to the following file structures:
 
@@ -50,7 +52,7 @@ A typical installation leads to the following file structures:
   </aside>
 
 Note that the game can work without user files and a fresh install starts without them. You might
-not have a `Paradox Interactive` folder at all.
+not have a `Paradox Interactive` folder at all. The guide covers this situation below.
 
 Using this guide
 ----------------
@@ -91,7 +93,7 @@ Symptoms:
 - there is no error being displayed
 - the game or launcher doesn’t even appear
 - the game process barely lasts if at all, there’s just no game
-- the user files are missing, and the file structure is not being created by the game
+- the [user files][] are missing, and the file structure is not being created by the game
 
 This is typical of the Steam version, as it appears the installation process seems to (sometimes?)
 neglect installation of required redistributables. **Steam users are highly encouraged to try the
@@ -124,8 +126,7 @@ Fix:
 
 The game starts, but I have no user files
 -----------------------------------------
-
-[user files]: #the-game-starts-but-i-have-no-user-files
+[no-user-files]: #the-game-starts-but-i-have-no-user-files
 
 <sup>[Back to the table of contents](#toc)</sup>
 
@@ -133,7 +134,11 @@ Symptoms:
 
 - the launcher works
 - the game starts
-- there is no user file structure
+- there is no [user file structure][]
+- there is a user file structure, but the `logs` folder inside is always empty when starting the
+  game without mods
+  * a `logs` folder full of empty individual `.txt` log files is not abnormal in
+    itself however
 
 <aside>
 
@@ -143,24 +148,21 @@ Interactive\Victoria II` folder (if you have played other Paradox games before),
 
 </aside>
 
-Possible causes:
+Possible causes & some fixes:
 
+- **(Partially confirmed)** The device or filesystem where the user files are expected to live has
+  no available storage left. The game is known to crash in some cases rather than tell the user
+  what is happening. You will have to free up some space.
 - You may have unusual ownership/permissions set for either your game files or your user file parent
   folders. (This can be the case if you are only able to start e.g. Steam or your games in admin
   mode.) This should only happen if you went out of your way to set it up so, and power users should
   figure out on their own how to fix this.
 - There are ways to use a custom location for your user files. Once again this is more of a power
-  user situation that shouldn’t happen on its own.
+  user situation that shouldn’t happen on its own, and that will not be covered here.
 
-Strictly speaking this isn’t an issue as the game can technically work without user files. However
-you do need a place to put e.g. your settings and saves, so the topic has to be mentioned even when
-some of it is outside the scope of this guide.
-
-The real purpose of this section is twofold. First, some sections need to talk about user files and
-will thus refer to this section.
-
-Second, the `logs` folder inside the user file structure is also where the game stores logging
-information. (Starting the game with a mod enabled may result in information being stored in
+From this point on, subsequent sections will assume that the user file structure is set up and
+functional. In particular, the `logs` folder inside the user files is also where the game stores
+logging information. (Starting the game with a mod enabled may result in information being stored in
 `<mod-path>/logs` instead.) This can be useful for figuring out what goes wrong with the game.
 
 The game displays incorrectly
@@ -183,8 +185,8 @@ user isn’t able to click anything!
 
 Fixes:
 
-- In your user files there should be a `settings.txt` file. You can edit it directly when the game
-  is **not** running to change how the game will display on the next start.
+- In your [user files][] there should be a `settings.txt` file. You can edit it directly when the
+  game is **not** running to change how the game will display on the next start.
 
   Here is for instance what the `graphics` entry of the file can look like for running at 1080p
   60 Hz in borderless mode:
@@ -258,7 +260,8 @@ The game crashes when initialising the map
 
 <sup>[Back to the table of contents](#toc)</sup>
 
-Note that the logs and the map cache are part of the [user files][].
+Note that the logs and the map cache are part of the [user files][]. Ensure [these are
+working][no-user-files] before reading this section.
 
 Symptoms:
 
@@ -268,6 +271,9 @@ Symptoms:
   related to the map
 
 Fixes:
+
+- **(Unconfirmed)** The device or filesystem where the user files live has no available storage
+  left. You will have to free up some space.
 
 - Initialising the map logic for the first time is an expensive operation. If the game is not
   crashing, make sure you are giving the operation a chance by leaving it some time to complete.
@@ -293,7 +299,8 @@ The game crashes when processing flags
 
 <sup>[Back to the table of contents](#toc)</sup>
 
-Note that the logs and the flag cache are part of the [user files][].
+Note that the logs and the flag cache are part of the [user files][]. Ensure [these are
+working][no-user-files] before reading this section.
 
 Symptoms:
 
@@ -302,6 +309,9 @@ Symptoms:
   related to flags
 
 Fixes:
+
+- The device or filesystem where the user files live has no available storage left. You will have to
+  free up some space.
 
 - Initialising the flag cache for the first time is an expensive operation. If the game is not
   crashing, make sure you are giving the operation a chance by leaving it some time to complete.
