@@ -70,6 +70,7 @@ If symptoms don’t match, skip ahead to the next section. If they do, see if th
 | [The game won’t start](#the-game-wont-start)
 | [The game starts, but I have no user files](#the-game-starts-but-i-have-no-user-files)
 | [The game displays incorrectly](#the-game-displays-incorrectly)
+| [The game crashes when starting or loading a game](#the-game-crashes-when-starting-or-loading-a-game)
 | [The game crashes when initialising the map](#the-game-crashes-when-initialising-the-map)
 | [The game crashes when processing flags](#the-game-crashes-when-processing-flags)
 | [The game displays text incorrectly](#the-game-displays-text-incorrectly)
@@ -255,6 +256,41 @@ copy it over to each of your mod user file location whenever you change it. (As 
 can likewise copy your `messagetypes_custom.txt` files around to transfer your message settings
 between mods.)
 
+The game crashes when starting or loading a game
+------------------------------------------------
+
+<sup>[Back to the table of contents](#toc)</sup>
+
+Note that save games are part of the [user files][]. Ensure [these are working][no-user-files]
+before reading this section.
+
+Symptoms:
+
+- the game is stuck or crashes when attempting to display the campaign screen before starting or
+  loading a game, after choosing “Single Player” in the main menu
+
+Fixes:
+
+- **(Partially confirmed)** The game can crash when it fails to process some saves. It is suspected
+  that this can happen for corrupted saves, or saves that were made with a different game or mod
+  version. On a typical installation on Windows saves are located at the following:
+
+  ```
+  %userprofile%\Documents\Paradox Interactive\Victoria II\save games
+  ```
+
+  (If you are loading a mod you may be using mod-specific user files instead, in which case the save
+  games are found in a `<mod-path>/save games` folder inside your user files.)
+
+  You can stow away your old saves in a subfolder to hide them from the game. E.g.:
+
+  ```
+  %userprofile%\Documents\Paradox Interactive\Victoria II\save games\my old saves
+  ```
+
+  Other solutions may involve hiding those saves inside an archive file, moving them somewhere else
+  altogether, or outright deleting them.
+
 The game crashes when initialising the map
 ------------------------------------------
 
@@ -285,7 +321,7 @@ Fixes:
   %userprofile%\Documents\Paradox Interactive\Victoria II\map\cache
   ```
 
-  If you are loading a mod, you may be using mod-specific user files instead in which case the map
+  If you are loading a mod you may be using mod-specific user files instead, in which case the map
   cache is a `<mod-path>/map/cache` folder inside your user files.
 
 - Steam users may try verifying the integrity of game files, in case the map files were corrupted.
@@ -323,7 +359,7 @@ Fixes:
   %userprofile%\Documents\Paradox Interactive\Victoria II\gfx\flags
   ```
 
-  If you are loading a mod, you may be using mod-specific user files instead in which case the flag
+  If you are loading a mod you may be using mod-specific user files instead, in which case the flag
   cache is a `<mod-path>/gfx/flags` folder inside your user files.
 
 - Steam users may try verifying the integrity of game files, in case the flag files were corrupted.
