@@ -214,9 +214,9 @@ Fixes:
     displayed as 59 Hz) or 61 Hz and you should verify what your system and/or other games are using.
     Victoria II is known to sometimes guess an incorrect refresh rate, making it unusable.
 
-- If you have no `settings.txt` file or are worried it is broken, we provide a model file that you
-  can [review to use as a template][settings-model-file] or [download
-  wholesale][settings-model-download].
+- You may not have a `settings.txt` file, worry that it is broken, or not be confident that you can
+  correctly edit it by yourself. For these cases we provide a model file that you can [review to use
+  as a template][settings-model-file] or [download wholesale][settings-model-download].
 
   When doing the latter, place the file at the root of your user files **as long as you understand**
   this will affect *all* your settings. (As is tradition for Paradox games you might want to put
