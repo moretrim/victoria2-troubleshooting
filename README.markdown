@@ -151,9 +151,9 @@ Interactive\Victoria II` folder (if you have played other Paradox games before),
 
 Possible causes & some fixes:
 
-- **(Partially confirmed)** The device or filesystem where the user files are expected to live has
-  no available storage left. The game is known to crash in some cases rather than tell the user
-  what is happening. You will have to free up some space.
+- **(Partially confirmed)** The device or filesystem where the user files are expected to live may
+  not have any available storage left. When this is the case, the game is sometimes known to crash
+  rather than tell the user what is happening. You will have to free up some space.
 - You may have unusual ownership/permissions set for either your game files or your user file parent
   folders. (This can be the case if you are only able to start e.g. Steam or your games in admin
   mode.) This should only happen if you went out of your way to set it up so, and power users should
@@ -308,8 +308,8 @@ Symptoms:
 
 Fixes:
 
-- **(Unconfirmed)** The device or filesystem where the user files live has no available storage
-  left. You will have to free up some space.
+- **(Unconfirmed)** If the device or filesystem where the user files live has no available storage
+  left, you will have to free up some space.
 
 - Initialising the map logic for the first time is an expensive operation. If the game is not
   crashing, make sure you are giving the operation a chance by leaving it some time to complete.
@@ -346,8 +346,8 @@ Symptoms:
 
 Fixes:
 
-- The device or filesystem where the user files live has no available storage left. You will have to
-  free up some space.
+- If the device or filesystem where the user files live has no available storage left, you will have
+  to free up some space.
 
 - Initialising the flag cache for the first time is an expensive operation. If the game is not
   crashing, make sure you are giving the operation a chance by leaving it some time to complete.
