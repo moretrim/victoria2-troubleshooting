@@ -107,8 +107,17 @@ Fix:
     for the x64 redistributable as Victoria II is not a 64-bit game–the link points to the
     appropriate version)
 
-  If one of the installers reports an error during the installation process, this can be a sign of
-  conflict or corruption. How to repair your system in such case is outside the scope of this guide.
+  Either of the installers may report that your system is up-to-date, which can look like the
+  following:
+
+  ![A newer version has been detected](./uptodate.png)
+
+  This is a sign that things are in order for that particular redistributable, and no further action
+  is required on your part. Move on to the next installer, if not done already.
+
+  However if one of the installers otherwise reports an error during the installation process, this
+  can be a sign of conflict or corruption. How to repair your system in such case is outside the
+  scope of this guide.
 
 [directx-redist]: https://www.microsoft.com/en-US/download/details.aspx?id=35
 [visual-redist]:  https://www.microsoft.com/en-US/download/details.aspx?id=5555
