@@ -125,6 +125,16 @@ Fix:
 [directx-redist]: https://www.microsoft.com/en-US/download/details.aspx?id=35
 [visual-redist]:  https://www.microsoft.com/en-US/download/details.aspx?id=5555
 
+Other remarks:
+
+- Victoria II also requires the .NET Framework 2.0, which these days is included in the .NET
+  Framework 3.5. If you are a Windows 10 user, you should have been prompted to enable it the first
+  time you launched a .NET 3.5 or earlier application. You should not have to do anything else.
+
+  If this does not cover your situation, you should [try the official documentation][.NET 3.5].
+
+[.NET 3.5]: https://docs.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows-10
+
 The game starts, but I have no user files
 -----------------------------------------
 [no-user-files]: #the-game-starts-but-i-have-no-user-files
