@@ -70,6 +70,7 @@ If symptoms don’t match, skip ahead to the next section. If they do, see if th
 | [The game won’t start](#the-game-wont-start)
 | [The game starts, but I have no user files](#the-game-starts-but-i-have-no-user-files)
 | [The game displays incorrectly](#the-game-displays-incorrectly)
+| [The game displays, but is not borderless](#the-game-displays-but-is-not-borderless)
 | [The game crashes when starting or loading a game](#the-game-crashes-when-starting-or-loading-a-game)
 | [The game crashes when initialising the map](#the-game-crashes-when-initialising-the-map)
 | [The game crashes when processing flags](#the-game-crashes-when-processing-flags)
@@ -265,6 +266,47 @@ To make your life easier you can take care of a single master `settings.txt` fil
 copy it over to each of your mod user file location whenever you change it. (As an added bonus you
 can likewise copy your `messagetypes_custom.txt` files around to transfer your message settings
 between mods.)
+
+The game displays, but is not borderless
+----------------------------------------
+
+<sup>[Back to the table of contents](#toc)</sup>
+
+Symptom:
+
+- the game runs & displays, but:
+  * setting `borderless=yes` in the `settings.txt` file has no effect, and the entry is being
+    removed from the file by the game
+  * in the settings screen of the game, there is no option for setting borderless
+
+Cause:
+
+The option to run the game borderless was added very late in the game’s development. As a
+consequence, it is only available to users with **the final <cite>Heart of Darkness</cite>
+expansion**. (In this era of Paradox Development Studio games, on-going development only applied to
+the latest expansion meaning that patches & fixes were not backported to earlier expansions or the
+base version of the game.)
+
+This is what part of the video settings screen should look like when you are running <cite>Heart of
+Darkness</cite>, with the window mode option highlighted:
+
+![Heart of Darkness video settings screen](./borderless-setting.png)
+
+Note the expansion title & background image.
+
+Fixes:
+
+There are tools to make a windowed application appear borderless. One such tool that is known to
+work for Victoria II is [Borderless Gaming][]. (Make sure you are running the game in windowed mode:
+either set it through video settings, or [edit your `settings.txt`](#the-game-displays-incorrectly)
+to contain `fullScreen=no`. Remember that mods may rely on their own `settings.txt`!) How to use
+these tools is beyond the scope of this guide.
+
+While using these tools, you may have difficulty scrolling the map with your mouse cursor as it
+escapes the borderless window. You can use the arrow keys to mitigate this, or investigate whether
+the tool supports a mouse locking feature. Borderless Gaming has one such feature under its options.
+
+[Borderless Gaming]: https://github.com/Codeusa/Borderless-Gaming/releases
 
 The game crashes when starting or loading a game
 ------------------------------------------------
