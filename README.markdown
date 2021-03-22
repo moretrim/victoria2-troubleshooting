@@ -134,6 +134,15 @@ Other remarks:
 
   If this does not cover your situation, you should [try the official documentation][.NET 3.5].
 
+  (**Partially confirmed**) Since however the .NET Framework is only used by the launcher and not
+  the game itself, you can work around the issue if you cannot manage to install this prerequisite.
+  You can start the game directly by launching the `v2game.exe` executable itself. You can find it
+  in you installation folder right besides the `victoria2.exe` launcher executable.
+
+  If you want to load mods without the launcher, you’ll need to be adding `-mod=<mod file>` launch
+  options, e.g. to a shortcut to `v2game.exe` (for Windows users). Multiple options can be used to
+  load multiple mods. Detailed information on the topic is outside the scope of guide.
+
 [.NET 3.5]: https://docs.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows-10
 
 The game starts, but I have no user files
