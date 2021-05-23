@@ -111,6 +111,12 @@ Fix:
     for the x64 redistributable as Victoria II is not a 64-bit game–the link points to the
     appropriate version)
 
+    ***NOTE:*** as of this writing, the official download appears to be out of order. You can try to
+    search for the package to find third-party distributors yourself, or [find it on
+    cnet.com][third-party-visual-c++-2010-redistributable].
+
+    [third-party-visual-c++-2010-redistributable]: https://download.cnet.com/Microsoft-Visual-C-2010-Redistributable-Package-x86/3000-2383_4-75451146.html
+
   Either of the installers may report that your system is up-to-date, which can look like the
   following:
 
