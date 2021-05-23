@@ -1,5 +1,5 @@
 Guide to Troubleshooting Victoria II
-====================================
+------------------------------------
 
 Despite its maturity Victoria II can be surprisingly hard to run nowadays. This guide, while not
 exhaustive, aims to help you solve your issues.
