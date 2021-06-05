@@ -107,15 +107,16 @@ Fix:
 - Install required redistributables (below are links to official Microsoft downloads):
 
   * [DirectX End-User Runtime][directx-redist]
-  * [Visual C++ 2010 Redistributable Package (x86)][visual-redist] (make sure not to mistake this
-    for the x64 redistributable as Victoria II is not a 64-bit game–the link points to the
-    appropriate version)
+  * [Visual C++ 2010 Redistributable Package (x86)][visual-redist] which these days is packaged
+    within a security update. (**Confirmation required**: does the `vcredist_x86.exe` installer work
+    standalone?) Make sure to select the appropriate **x86** installer as Victoria II is a 32-bit
+    executable:
 
-    ***NOTE:*** as of this writing, the official download appears to be out of order. You can try to
-    search for the package to find third-party distributors yourself, or [find it on
-    cnet.com][third-party-visual-c++-2010-redistributable].
+    ![x86-installer](./msvc2010sp1.png)
 
-    [third-party-visual-c++-2010-redistributable]: https://download.cnet.com/Microsoft-Visual-C-2010-Redistributable-Package-x86/3000-2383_4-75451146.html
+    ***NOTE:*** until confirmation of the above, you can try to search for the older *Visual C++
+    2010 Redistributable Package (x86)* that Microsoft no longer provides to find third-party
+    distributors yourself, or [find it on cnet.com][third-party-visual-c++-2010-redistributable].
 
   Either of the installers may report that your system is up-to-date, which can look like the
   following:
@@ -130,7 +131,8 @@ Fix:
   scope of this guide.
 
 [directx-redist]: https://www.microsoft.com/en-US/download/details.aspx?id=35
-[visual-redist]:  https://www.microsoft.com/en-US/download/details.aspx?id=5555
+[visual-redist]:  https://www.microsoft.com/en-us/download/details.aspx?id=26999
+[third-party-visual-c++-2010-redistributable]: https://download.cnet.com/Microsoft-Visual-C-2010-Redistributable-Package-x86/3000-2383_4-75451146.html
 
 Other remarks:
 
