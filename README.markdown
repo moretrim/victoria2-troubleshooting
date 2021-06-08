@@ -71,7 +71,7 @@ If symptoms don’t match, skip ahead to the next section. If they do, see if th
 | [The game starts, but I have no user files](#the-game-starts-but-i-have-no-user-files)
 | [The game displays incorrectly](#the-game-displays-incorrectly)
 | [The game displays, but is not borderless](#the-game-displays-but-is-not-borderless)
-| [The game crashes when starting or loading a game](#the-game-crashes-when-starting-or-loading-a-game)
+| [The game behaves unexpectedly when starting or loading a game](#the-game-behaves-unexpectedly-when-starting-or-loading-a-game)
 | [The game crashes when initialising the map](#the-game-crashes-when-initialising-the-map)
 | [The game crashes when processing flags](#the-game-crashes-when-processing-flags)
 | [The game displays text incorrectly](#the-game-displays-text-incorrectly)
@@ -320,8 +320,8 @@ the tool supports a mouse locking feature. Borderless Gaming has one such featur
 
 [Borderless Gaming]: https://github.com/Codeusa/Borderless-Gaming/releases
 
-The game crashes when starting or loading a game
-------------------------------------------------
+The game behaves unexpectedly when starting or loading a game
+-------------------------------------------------------------
 
 <sup>[Back to the table of contents](#toc)</sup>
 
@@ -332,12 +332,17 @@ Symptoms:
 
 - the game is stuck or crashes when attempting to display the campaign screen before starting or
   loading a game, after choosing “Single Player” in the main menu
+- the game can reach the campaign screen, but there are oddities:
+  * some countries display incorrect or black flags
+  * some countries are missing a government or culture
+  * some borders look wrong
+  * some countries are missing
 
 Fixes:
 
-- **(Partially confirmed)** The game can crash when it fails to process some saves. It is suspected
-  that this can happen for corrupted saves, or saves that were made with a different game or mod
-  version. On a typical installation on Windows saves are located at the following:
+- The game can behave unexpectedly when it fails to process some saves. This can happen for
+  corrupted saves, or saves that were made with a different game or mod version. On a typical
+  installation on Windows saves are located at the following:
 
   ```
   %userprofile%\Documents\Paradox Interactive\Victoria II\save games
