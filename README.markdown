@@ -92,6 +92,7 @@ Symptoms:
   ![MSVCP100.dll is missing](./msvcp100.png)
 - **an error appears, but only when starting the `victoria2.exe` or `v2game.exe` executable directly
   in the game files and not through Steam**
+- the error “The application was unable to start correctly” (code `0xc000007b`) is being displayed
 - there is no error being displayed
 - the game or launcher doesn’t even appear
 - the game process barely lasts if at all, there’s just no game
@@ -124,6 +125,13 @@ Fix:
   However if one of the installers otherwise reports an error during the installation process, this
   can be a sign of conflict or corruption. How to repair your system in such case is outside the
   scope of this guide.
+
+  If you are still seeing the error “The application was unable to start correctly” (code
+  `0xc000007b`) when attempting to launch the game, this most likely means that the 32-bit game
+  executable is wrongly accessing 64-bit rather than 32-bit DLLs. You should at least have tried to
+  install the required redistributables—and make sure that you did get the **x86** version of the
+  Visual C++ 2010 Redistributable Package. If you have at any point manually handled your system
+  DLLs, how to undo some of your own steps is outside the scope of this guide.
 
 [directx-redist]: https://www.microsoft.com/en-US/download/details.aspx?id=35
 [visual-redist]:  https://www.microsoft.com/en-us/download/details.aspx?id=26999
