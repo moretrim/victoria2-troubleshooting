@@ -126,6 +126,13 @@ Fix:
   can be a sign of conflict or corruption. How to repair your system in such case is outside the
   scope of this guide.
 
+  After having installed all required prerequisites, Steam may still attempt to install outdated
+  redistributables. If that process never seems to succeed to the extent that Steam will not start
+  the launcher, you may do so yourself directly through the `victoria2.exe` executable that can be
+  found in your local installed files. (You can also start the game directly through the
+  `v2game.exe` executable, though if you want to use mods you will have to rely on launch
+  parameters—which will not be explained in this guide.)
+
   If you are still seeing the error “The application was unable to start correctly” (code
   `0xc000007b`) when attempting to launch the game, this most likely means that the 32-bit game
   executable is wrongly accessing 64-bit rather than 32-bit DLLs. You should at least have tried to
